@@ -3,6 +3,7 @@ wireguard-tools
 snapd
 spotify-easyrpm
 teams
+rsync
 git
 vim
 vlc
