@@ -1,4 +1,4 @@
-# Pater-s-OpenSuse-setup
+# Pater's OpenSuse setup
 Setup script for OpenSuse
 With my favorite programs
 
