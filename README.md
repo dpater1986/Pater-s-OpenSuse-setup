@@ -10,7 +10,7 @@ wget https://raw.githubusercontent.com/dpater1986/Pater-s-OpenSuse-setup/main/op
 
 ## What is going to be installed?
 To see what installed on the system follow the link:
-https://github.com/dpater1986/Pater-s-OpenSuse-setup#opensuse.packages
+https://github.com/dpater1986/Pater-s-OpenSuse-setup/blob/main/opensuse.packages
 
 ## Below is everything is included in this script:
 
