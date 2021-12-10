@@ -35,7 +35,8 @@ cat ~/bachrc.aliases >> ~/.bashrc
 ## 6.1 Get files
 ## 6.2 Import SSH keys
 ### Local server
-rsync -avzhe ssh --progress pi@172.19.23.14:~/backup/ssh ~/.ssh
+rsync -avzhe ssh --progress pi@172.19.23.14:~/backup/ssh ~/importbackup
+cp ~/importbackup/ssh/home/dennis/.ssh/* ~/.ssh
 ## 6.3 Import Gnupg keys
 ## 6.4 Import Wireguard
 sudo mv ~/wg0.conf /etc/wireguard/wg0.conf
