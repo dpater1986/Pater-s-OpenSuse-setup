@@ -26,7 +26,9 @@ sudo zypper refresh
 sudo zypper update # I'll think you can't do this enough :-D
 
 # 4. Installs all packages
-sudo zypper --non-interactive install $(cat ~/opensuse.packages)
+sudo zypper install $(cat ~/opensuse.packages)
+## install Spotify via spotify-easyrpm
+spotify-easyrpm
 
 # 5. Add personal aliases to .bachrc
 cat ~/bachrc.aliases >> ~/.bashrc
