@@ -73,7 +73,6 @@ CHOICE=$(dialog --clear \
                 "${OPTIONS[@]}" \
                 2>&1 >/dev/tty)
 
-clear
 case $CHOICE in
         u)
             echo "You chose to update this script"
