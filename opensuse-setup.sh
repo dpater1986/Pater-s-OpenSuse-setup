@@ -1,6 +1,13 @@
 #!/usr/bin/bash
 cd ~
 
+# 1. Setup hostname
+vendor=$(cat /sys/class/dmi/id/board_vendor | tr '[:upper:]' '[:lower:]')
+version=$(cat /sys/class/dmi/id/product_version | tr -d ' ')
+product=${vendor^}-$version
+
+
+
 # 1. Update the system
 sudo zypper refresh
 sudo zypper update
