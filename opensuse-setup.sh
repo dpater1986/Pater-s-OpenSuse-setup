@@ -38,7 +38,6 @@ echo " \___/ | .__/  \___||_| |_||___/ \__,_||___/ \___|   \_/   \__,_||_.__/ |_
 echo "       | |                                                                                                    ";
 echo "       |_|                                                                                                    ";
 
-cd ~
 update() {
     echo "Update this script!"
     wget https://raw.githubusercontent.com/dpater1986/Pater-s-OpenSuse-setup/add_options/opensuse-setup.sh
@@ -49,6 +48,7 @@ version() {
     echo "is at verion 0.0.1"
     echo "Do you like my script please donate at https://www.paypal.com/donate/?hosted_button_id=AKQYLCV9LU2S4"
     echo "Thanks in advance"
+    return
 } 
 setup_ssh() {
     echo 'test ssh'
@@ -63,19 +63,19 @@ menu() {
                 sleep 2
                 clear
                 update
-                return;;
+                menu;;
             s)
                 echo "You chose to setup ssh"
                 sleep 2
                 clear
                 setup_ssh
-                return;;
+                menu;;
             V)
                 echo "You chose to show the version of this script"
                 sleep 2
                 clear
                 version
-                return;;
+                menu;;
             q)
                 echo "You chose to quit"
                 sleep 2
