@@ -55,6 +55,8 @@ setup_ssh() {
 } 
 
 menu() {
+    sleep 2
+    echo ""
     echo "Select an option!"
     echo ""
     echo "u     Update this script"
