@@ -43,7 +43,7 @@ update() {
     mkdir -p ~/.oS-setup
     wget -o ~/.oS-setup/update-oss.sh https://raw.githubusercontent.com/dpater1986/Pater-s-OpenSuse-setup/add_options/.oS-setup/update-oss.sh
     chmod +x ~/.oS-setup/update-oss.sh
-    ./~/osS-setup/update-oss.sh
+    ./~/oS-setup/update-oss.sh
 }
 version() {
     echo "The script: ./opensuse-setup.sh" 
