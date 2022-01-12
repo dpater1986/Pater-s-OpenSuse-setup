@@ -105,3 +105,5 @@ while getopts ":m:s:u:V" option; do
         exit;
     esac
 done
+
+menu
