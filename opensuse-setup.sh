@@ -95,7 +95,7 @@ menu() {
     esac
 }
 
-while getopts ":m:s:u:V" option; do
+while getopts ":msuV" option; do
     case $option in
         m) #Display menu
         menu
