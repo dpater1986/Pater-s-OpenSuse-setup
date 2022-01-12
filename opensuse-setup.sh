@@ -54,41 +54,35 @@ setup_ssh() {
     echo 'test ssh'
 } 
 
-HEIGHT=15
-WIDTH=40
-CHOICE_HEIGHT=4
-BACKTITLE="Backtitle here"
-TITLE="Title here"
-MENU="Choose one of the following options:"
+menu() {
 
-OPTIONS=(u "Update this script"
-         V "Show version"
-         q "Quit")
-
-CHOICE=$(dialog --clear \
-                --backtitle "$BACKTITLE" \
-                --title "$TITLE" \
-                --menu "$MENU" \
-                $HEIGHT $WIDTH $CHOICE_HEIGHT \
-                "${OPTIONS[@]}" \
-                2>&1 >/dev/tty)
-
-case $CHOICE in
-        u)
-            echo "You chose to update this script"
-            clear
-            update
-            return;;
-        V)
-            echo "You chose to show the version of this script"
-            version
-            clear
-            return;;
-        q)
-            echo "You chose to quit"
-            clear
-            exit;;
-esac
+    read n
+    case $n in
+            u)
+                echo "You chose to update this script"
+                sleep 2
+                clear
+                update
+                return;;
+            s)
+                echo "You chose to setup ssh"
+                sleep 2
+                clear
+                setup_ssh
+                return;;
+            V)
+                echo "You chose to show the version of this script"
+                sleep 2
+                clear
+                version
+                return;;
+            q)
+                echo "You chose to quit"
+                sleep 2
+                clear
+                exit;;
+    esac
+}
 
 while getopts ":m:s:u:V" option; do
     case $option in
