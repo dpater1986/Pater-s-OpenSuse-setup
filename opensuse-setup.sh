@@ -55,7 +55,13 @@ setup_ssh() {
 } 
 
 menu() {
-
+    echo "Select an option!"
+    echo ""
+    echo "u     Update this script"
+    echo "s     Setup ssh"
+    echo "V     Show version number"
+    echo "q     Quit this script"
+    echo ""
     read n
     case $n in
             u)
@@ -63,18 +69,21 @@ menu() {
                 sleep 2
                 clear
                 update
+                sleep 3
                 menu;;
             s)
                 echo "You chose to setup ssh"
                 sleep 2
                 clear
                 setup_ssh
+                sleep 3
                 menu;;
             V)
                 echo "You chose to show the version of this script"
                 sleep 2
                 clear
                 version
+                sleep 3
                 menu;;
             q)
                 echo "You chose to quit"
