@@ -40,7 +40,7 @@ echo "       |_|                                                                
 
 update() {
     echo "Update this script!"
-    wget -0 https://raw.githubusercontent.com/dpater1986/Pater-s-OpenSuse-setup/add_options/opensuse-setup.sh
+    wget -0 opensuse-setup.sh https://raw.githubusercontent.com/dpater1986/Pater-s-OpenSuse-setup/add_options/opensuse-setup.sh
     chmod +x opensuse-setup.sh
 }
 version() {
