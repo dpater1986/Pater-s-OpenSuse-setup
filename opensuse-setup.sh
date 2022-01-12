@@ -71,21 +71,21 @@ menu() {
                 sleep 2
                 clear
                 update
-                sleep 3
+                sleep 1
                 menu;;
             s)
                 echo "You chose to setup ssh"
                 sleep 2
                 clear
                 setup_ssh
-                sleep 3
+                sleep 1
                 menu;;
             V)
                 echo "You chose to show the version of this script"
                 sleep 2
                 clear
                 version
-                sleep 3
+                sleep 1
                 menu;;
             q)
                 echo "You chose to quit"
