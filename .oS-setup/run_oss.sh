@@ -38,34 +38,26 @@ echo " \___/ | .__/  \___||_| |_||___/ \__,_||___/ \___|   \_/   \__,_||_.__/ |_
 echo "       | |                                                                                                    ";
 echo "       |_|                                                                                                    ";
 
-update() {
-    echo "Update this script!"
-    mkdir -p ~/.oS-setup
-    wget -o ~/.oS-setup/update-oss.sh https://raw.githubusercontent.com/dpater1986/Pater-s-OpenSuse-setup/add_options/.oS-setup/update-oss.sh
-    chmod +x ~/.oS-setup/update-oss.sh
-    ~/.oS-setup/update-oss.sh
-}
 version() {
     echo "The script: ./opensuse-setup.sh" 
-    echo "is at verion 0.0.1"
+    echo "is at verion 0.0.2"
     echo "Do you like my script please donate at https://www.paypal.com/donate/?hosted_button_id=AKQYLCV9LU2S4"
     echo "Thanks in advance"
     return
-} 
-setup_ssh() {
-    echo 'test ssh'
-} 
-
+}
 menu() {
     sleep 2
     echo ""
     echo "Select an option!"
     echo ""
-    echo "u     Update this script"
-    echo "s     Setup ssh"
+#    echo "u     Update this script"
+#    echo "s     Setup ssh"
     echo "V     Show version number"
     echo "q     Quit this script"
     echo ""
+    respone
+}
+response() {
     read n
     case $n in
             u)
@@ -96,7 +88,4 @@ menu() {
                 exit;;
     esac
 }
-
-
-
 menu
