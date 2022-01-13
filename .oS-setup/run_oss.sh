@@ -46,7 +46,7 @@ version() {
     return
 }
 menu() {
-    sleep 2
+    sleep 1
     echo ""
     echo "Select an option!"
     echo ""
