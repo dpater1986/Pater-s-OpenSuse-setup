@@ -55,6 +55,7 @@ menu() {
     echo "i     Install packages"
     echo "b     Change bash its looks and feels by adding content to .bashrc"
     echo "V     Show version number"
+    echo "o     Make this script as a shortcut in bash!"
     echo "q     Quit this script"
     echo ""
     response
@@ -90,4 +91,15 @@ response() {
                 exit;;
     esac
 }
+while getopts ":V" option; do
+    case $option in
+        V) # Run opensuse setup no update
+        version
+        exit;;
+        \?) # Invalid option
+        echo 'Invalid option'
+        help
+        exit;
+    esac
+done
 menu
