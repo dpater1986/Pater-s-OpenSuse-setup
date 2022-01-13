@@ -29,6 +29,6 @@ while getopts ":rh" option; do
     esac
 done
 
-wget -o ~/.oS-setup/run_oss.sh https://raw.githubusercontent.com/dpater1986/Pater-s-OpenSuse-setup/add_options/.oS-setup/run_oss.sh
+wget -O ~/.oS-setup/run_oss.sh https://raw.githubusercontent.com/dpater1986/Pater-s-OpenSuse-setup/add_options/.oS-setup/run_oss.sh
 chmod +x ~/.oS-setup/run_oss.sh
 run_oss
