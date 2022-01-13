@@ -50,12 +50,14 @@ menu() {
     echo ""
     echo "Select an option!"
     echo ""
-#    echo "u     Update this script"
-#    echo "s     Setup ssh"
+    echo "s     Setup ssh-key"
+    echo "g     Setup pgp-key"
+    echo "i     Install packages"
+    echo "b     Change bash its looks and feels by adding content to .bashrc"
     echo "V     Show version number"
     echo "q     Quit this script"
     echo ""
-    respone
+    response
 }
 response() {
     read n
