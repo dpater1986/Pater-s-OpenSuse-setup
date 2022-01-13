@@ -91,9 +91,9 @@ response() {
                 exit;;
     esac
 }
-while getopts ":V" option; do
+while getopts ":a" option; do
     case $option in
-        V) # Run opensuse setup no update
+        a) # Run opensuse setup no update
         version
         exit;;
         \?) # Invalid option
