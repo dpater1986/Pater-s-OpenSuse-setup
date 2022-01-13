@@ -4,7 +4,7 @@
 #
 #
 run_oss() {
-    ~/.oS-setup/run_oss.show
+    ~/.oS-setup/run_oss.sh
     return
 }
 help() {
