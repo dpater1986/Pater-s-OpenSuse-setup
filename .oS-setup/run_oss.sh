@@ -55,7 +55,8 @@ install_packages() {
     sudo zypper refresh
     ## Check again for update
     sudo zypper update
-    sudo zypper --non-interactive install $(cat ~/oS-setup/opensuse.packages)
+    wget -O ~/.oS-setup/opensuse.packages $github/.oS-setup/opensuse.packages
+    sudo zypper --non-interactive install $(cat ~/.oS-setup/opensuse.packages)
 }
 
 version() {
