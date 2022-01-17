@@ -3,6 +3,11 @@
 # This litle bash script update to the latest script and then it runs that script.
 #
 #
+
+github_version="add_option"
+github_url="https://raw.githubusercontent.com/dpater1986/Pater-s-OpenSuse-setup/"
+github=$github_url$github_version
+
 run_oss() {
     ~/.oS-setup/run_oss.sh
     return
@@ -29,6 +34,6 @@ while getopts ":rh" option; do
     esac
 done
 mkdir ~/.oS-setup
-wget -O ~/.oS-setup/run_oss.sh https://raw.githubusercontent.com/dpater1986/Pater-s-OpenSuse-setup/add_options/.oS-setup/run_oss.sh
+wget -O ~/.oS-setup/run_oss.sh $github/.oS-setup/run_oss.sh
 chmod +x ~/.oS-setup/run_oss.sh
-run_oss -a
+run_oss 
